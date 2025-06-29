@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hematovision - Upload</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 30px; text-align: center; background-color: #f9f9f9; }
+        .container { border: 2px solid red; padding: 20px; border-radius: 10px; background-color: #fff; display: inline-block; }
+        h2 { color: red; }
+        input[type="file"] { margin-top: 15px; }
+        .btn { background-color: red; color: white; padding: 10px 20px; border: none; margin-top: 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to the HematoVision</h2>
+        <p><strong>About Blood Cells</strong><br>
+        Blood cells play essential roles in immunity, oxygen transport, and clotting.</p>
+
+        <h3>Predict Blood Cell Type</h3>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required><br><br>
+            <input type="submit" value="Predict" class="btn">
+        </form>
+    </div>
+</body>
+</html>
